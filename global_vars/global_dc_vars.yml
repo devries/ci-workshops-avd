@@ -40,6 +40,16 @@ ntp:
       iburst: true
       local_interface: Management0
 
+# SNMP configuration
+snmp_server:
+  contact: CHRIS
+  location: VIRT
+  users:
+    - name: snmpuser
+      version: v3
+      auth: md5
+      auth_password: password
+    
 # Domain/DNS
 dns_domain: atd.lab
 
